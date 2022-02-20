@@ -1,0 +1,44 @@
+Rod:
+  allowedBait: "common"
+  catchTime: 10
+  item:
+    name: "&bCustom Rod &f{fish_caught}"
+    lore:
+      - "&aThe catch time on the rod is &f{catch_time}"
+      - ""
+      - "&aThis rod uses &f{allowed_bait} bait"
+    enchants:
+      - ""
+Bait:
+  common:
+    rewardIdentifiers:
+      - "CommonReward"
+      - "TestReward"
+    name: "CommonBait"
+    item:
+      material: STONE
+      name: "&7&lCommon Bait"
+      lore:
+        - "&bThis is a common bait"
+Rewards:
+  CommonReward:
+    commands:
+      list:
+        - 'give %player% apple 20'
+        - 'give %player% emerald 10'
+        - 'give %player% iron 10'
+        - 'give %player% redstone 10'
+        - 'give %player% cactus 10'
+        - 'give %player% dirt 10'
+      count: 2
+    TestReward:
+      fish:
+        item:
+          name:  "&cCUSTOM FISH"
+          lore:
+            - "&bValue: {value}"
+        min: 1000
+        max: 100000
+
+
+
